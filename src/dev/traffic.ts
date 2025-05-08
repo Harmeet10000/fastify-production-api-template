@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 async function generateTraffic() {
-  const baseUrl = 'http://localhost:3000/api';
+  const baseUrl = 'http://localhost:8000/api';
   
   while (true) {
     try {

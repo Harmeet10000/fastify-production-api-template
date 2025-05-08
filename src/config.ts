@@ -1,13 +1,13 @@
 export const config = {
   app: {
-    port: process.env.PORT || 3000,
-    environment: process.env.NODE_ENV || 'development'
+    port: process.env.PORT,
+    environment: process.env.NODE_ENV,
   },
   db: {
-    url: process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/fastify_api'
+    url: process.env.DATABASE_URL,
   },
   metrics: {
-    enabled: process.env.METRICS_ENABLED === 'true',
-    path: '/metrics'
-  }
-}
+    enabled: process.env.METRICS_ENABLED,
+    path: "/metrics",
+  },
+};
