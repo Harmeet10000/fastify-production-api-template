@@ -1,0 +1,19 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "panels": [
+    {
+      "title": "Request Duration",
+      "type": "graph",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "http_request_duration_seconds"
+        }
+      ]
+    }
+  ],
+  "title": "Application Metrics"
+}
