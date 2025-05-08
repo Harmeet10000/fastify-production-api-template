@@ -1,0 +1,29 @@
+{
+  "name": "fastify-production-api-template",
+  "version": "1.0.0",
+  "description": "A production-ready Fastify REST API template with TypeScript, PostgreSQL, and metrics",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "vitest",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:seed": "tsx src/dev/seed.ts",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [
+    "fastify",
+    "typescript",
+    "postgresql",
+    "docker",
+    "api",
+    "rest",
+    "drizzle",
+    "prometheus",
+    "grafana"
+  ],
+  "author": "",
+  "license": "MIT"
+}
