@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <g>
+    <text x="400" y="50" text-anchor="middle" font-family="Arial" font-size="24">Fastify Production API Architecture</text>
+    
+    <!-- Client Layer -->
+    <rect x="50" y="100" width="700" height="80" fill="#f0f0f0" stroke="#000000"/>
+    <text x="400" y="140" text-anchor="middle" font-family="Arial" font-size="16">Client Applications</text>
+    <text x="400" y="160" text-anchor="middle" font-family="Arial" font-size="14">(Web, Mobile, Desktop)</text>
+
+    <!-- API Layer -->
+    <rect x="50" y="220" width="700" height="120" fill="#e1f5fe" stroke="#000000"/>
+    <text x="400" y="250" text-anchor="middle" font-family="Arial" font-size="16">Fastify API Server</text>
+    <text x="400" y="280" text-anchor="middle" font-family="Arial" font-size="14">Routes, Controllers, Services</text>
+    <text x="400" y="300" text-anchor="middle" font-family="Arial" font-size="14">Authentication, Validation, Error Handling</text>
+
+    <!-- Database Layer -->
+    <rect x="50" y="380" width="300" height="80" fill="#e8f5e9" stroke="#000000"/>
+    <text x="200" y="420" text-anchor="middle" font-family="Arial" font-size="16">PostgreSQL Database</text>
+
+    <!-- Monitoring Layer -->
+    <rect x="450" y="380" width="300" height="80" fill="#fff3e0" stroke="#000000"/>
+    <text x="600" y="410" text-anchor="middle" font-family="Arial" font-size="16">Monitoring</text>
+    <text x="600" y="430" text-anchor="middle" font-family="Arial" font-size="14">Prometheus + Grafana</text>
+
+    <!-- Arrows -->
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+      </marker>
+    </defs>
+    
+    <line x1="400" y1="180" x2="400" y2="220" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="200" y1="340" x2="200" y2="380" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="600" y1="340" x2="600" y2="380" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+</svg>
